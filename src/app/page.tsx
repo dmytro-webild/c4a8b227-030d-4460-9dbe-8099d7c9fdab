@@ -177,6 +177,7 @@ export default function LandingPage() {
         { text: "Bizi Arayın", href: "tel:+903120000000" },
         { text: "Konum Yol Tarifi", href: "https://maps.google.com" }
       ]}
+      useInvertedBackground={false}
       background={{ variant: "sparkles-gradient" }}
     />
   </div>
