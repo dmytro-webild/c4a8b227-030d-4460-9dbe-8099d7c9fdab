@@ -75,8 +75,8 @@ export default function LandingPage() {
   <div id="about" data-section="about">
       <MediaAbout
       useInvertedBackground={false}
-      title="Kalite ve Samimiyetin Adresi"
-      description="Deniz Çerçeve olarak, yılların tecrübesiyle sanatın her alanında ihtiyaç duyduğunuz kaliteli malzemeyi ve titiz işçiliği sunuyoruz. Üç kuşaktır süregelen esnaflık anlayışımızla, her ölçüde tuval ve özel çerçeve projelerinizde yanınızdayız."
+      title="Deniz Çerçeve: Sanata Adanmış Üç Kuşak"
+      description="1970'lerden bu yana, ailemizden devraldığımız sanat aşkıyla Ankara'da üretiyoruz. Temel değerlerimiz; dürüst ticaret, yüksek kalite ve sanatkâr ruhlu titiz işçiliktir. Sadece ürün satmıyor, sanatçıların vizyonuna ortak oluyor ve tuvallerinize hayat katıyoruz. Türkiye'nin her noktasına aynı özveriyle hizmet vermekten gurur duyuyoruz."
       imageSrc="http://img.b2bpic.net/free-photo/woman-holding-chair-medium-shot_23-2148966888.jpg"
       imageAlt="master artisan working on frames"
     />
@@ -174,12 +174,12 @@ export default function LandingPage() {
       background={{
         variant: "rotated-rays-static"}}
       tag="İletişim"
-      title="Bizimle İletişime Geçin"
-      description="Siparişleriniz veya sorularınız için bize ulaşın. Üreticiden alıcıya ilk elden kaliteli hizmet sunuyoruz."
+      title="Deniz Çerçeve ile İletişime Geçin"
+      description="Ankara'daki atölyemize uğrayabilir veya siparişleriniz için bizi arayabilirsiniz. Sanat projeleriniz için en iyi çözüm ortağınız."
       imageSrc="http://img.b2bpic.net/free-photo/top-view-set-tools_23-2148428325.jpg"
       mediaAnimation="slide-up"
       inputPlaceholder="E-posta adresinizi girin"
-      buttonText="İletişime Geç"
+      buttonText="Mesaj Gönder"
       imageAlt="art workshop desk contact"
     />
   </div>
