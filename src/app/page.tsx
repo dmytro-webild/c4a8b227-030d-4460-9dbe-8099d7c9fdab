@@ -2,9 +2,9 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactSplit from '@/components/sections/contact/ContactSplit';
+import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FaqBase from '@/components/sections/faq/FaqBase';
-import FooterMedia from '@/components/sections/footer/FooterMedia';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
@@ -169,46 +169,37 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactSplit
-      useInvertedBackground={false}
-      background={{
-        variant: "rotated-rays-static"}}
+      <ContactCTA
       tag="İletişim"
       title="Deniz Çerçeve ile İletişime Geçin"
       description="Ankara'daki atölyemize uğrayabilir veya siparişleriniz için bizi arayabilirsiniz. Sanat projeleriniz için en iyi çözüm ortağınız."
-      imageSrc="http://img.b2bpic.net/free-photo/top-view-set-tools_23-2148428325.jpg"
-      mediaAnimation="slide-up"
-      inputPlaceholder="E-posta adresinizi girin"
-      buttonText="Mesaj Gönder"
-      imageAlt="art workshop desk contact"
+      buttons={[
+        { text: "Bizi Arayın", href: "tel:+903120000000" },
+        { text: "Konum Yol Tarifi", href: "https://maps.google.com" }
+      ]}
+      background={{ variant: "sparkles-gradient" }}
     />
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterMedia
-      imageSrc="http://img.b2bpic.net/free-photo/happy-woman-hanging-pictures_1398-3777.jpg"
-      logoText="Deniz Çerçeve"
+      <FooterSimple
       columns={[
         {
           title: "Kurumsal",          items: [
-            {
-              label: "Hakkımızda",              href: "#about"},
-            {
-              label: "İletişim",              href: "#contact"},
+            { label: "Hakkımızda", href: "#about" },
+            { label: "İletişim", href: "#contact" },
           ],
         },
         {
           title: "Ürünler",          items: [
-            {
-              label: "Tuval",              href: "#products"},
-            {
-              label: "Çerçeve",              href: "#products"},
-            {
-              label: "Şövale",              href: "#products"},
+            { label: "Tuval", href: "#products" },
+            { label: "Çerçeve", href: "#products" },
+            { label: "Şövale", href: "#products" },
           ],
         },
       ]}
-      imageAlt="professional art framing shop"
+      bottomLeftText="© 2025 Deniz Çerçeve"
+      bottomRightText="Ankara, Türkiye"
     />
   </div>
       </ReactLenis>
